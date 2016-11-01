@@ -28,6 +28,6 @@ body, a:link, a:visited, a:active{
 
 .jazzdancer {
   border:10px solid purple;
-  border-radius:5px;
-  position:aboslute;
+  border-radius:10px;
+  position: absolute;
 }
