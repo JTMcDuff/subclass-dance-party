@@ -23,11 +23,17 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:10px solid red;
   border-radius:10px;
-  position:absolute;
+  position: absolute;
 }
 
 .jazzdancer {
   border:10px solid purple;
-  border-radius:10px;
+  border-radius:8px;
+  position: absolute;
+}
+
+.MichaelJackson {
+  border:10px solid black;
+  border-radius: 12px;
   position: absolute;
 }
