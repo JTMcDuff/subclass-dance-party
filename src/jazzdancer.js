@@ -1,5 +1,4 @@
 var JazzDancer = function(top,left,timeBetweenSteps) {
-  debugger
   Dancer.call(this,top,left,timeBetweenSteps);
   this.$node = $('<span class="jazzdancer"></span>');
   console.log("creating node: "+this.$node);
