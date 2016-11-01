@@ -1,9 +1,10 @@
 var JazzDancer = function(top,left,timeBetweenSteps) {
   Dancer.call(this,top,left,timeBetweenSteps);
-  debugger
+  console.log("Making a JazzDancer");
   this.$node = $('<span class="jazzdancer"></span>');
   console.log(this.$node);
   this.step();
+  this.setPosition(top,left);
 }
 
 //Set up Object Inheritance for Pseudoclassical.
