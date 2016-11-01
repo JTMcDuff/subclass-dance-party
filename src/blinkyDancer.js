@@ -26,16 +26,19 @@ var BlinkyDancer = function(top,left, timeBetweenSteps) {
   //onsole.log("oldstep:"+this.oldStep);
 };
 
+//Set up Inheritance.
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
+BlinkyDancer.prototype.constructor = BlinkyDancer;
+
+//Save step as oldStep.
 BlinkyDancer.prototype.oldStep = Dancer.prototype.step;
 
 //Pseudo-classical implementation of methods.
 BlinkyDancer.prototype.step = function() {
-  console.log("oldstep:"+this.oldStep);
-  console.log("this.$node:"+this.$node);
+  //console.log("oldstep:"+this.oldStep);
+  //console.log("this.$node:"+this.$node);
   this.oldStep();
   this.$node.toggle();
 };
 
-//Set up inheritance
-BlinkyDancer.prototype.constructor = BlinkyDancer;
+

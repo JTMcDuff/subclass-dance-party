@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color: #A9A9A9;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -24,4 +24,10 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.jazzdancer {
+  border:10px solid purple;
+  border-radius:5px;
+  position:aboslute;
 }
