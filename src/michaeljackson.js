@@ -13,6 +13,7 @@ MichaelJackson.prototype.constructor = MichaelJackson;
 MichaelJackson.prototype.oldStep = Dancer.prototype.step;
 
 MichaelJackson.prototype.step = function() {
+
   //Call inherited method first when changing method for new class.
   this.oldStep();
   //var borderradius="border-radius";
@@ -22,5 +23,10 @@ MichaelJackson.prototype.step = function() {
     //width:"10px",
     //height:"10px"
   //};
-  this.$node.css({ "border-radius":"10px", "border":"10px solid white"});
+  //Should be turning node black and then white the next time it's called.
+  if (this.$node.css('border') === "10px solid black") {
+    this.$node.css({ "border-radius":"10px", "border":"10px solid white"});
+  } else {
+    this.$node.removeAttr('border');
+  }
 };
