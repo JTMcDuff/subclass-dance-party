@@ -8,8 +8,9 @@ describe('JazzDancer', function() {
      jazzDancer = new JazzDancer(10, 20, timeBetweenSteps);
   });
 
-  it('should have a jQuery $node object', function() {
-    expect(jazzDancer.$node).to.be.an.instanceof(jQuery);
+  it('should be of the jazzdancer class', function() {
+    console.log(jazzDancer.$node);
+    expect(jazzDancer.$node.hasClass("jazzdancer")).to.be.equal(true);
   });
 
   it('should have a step function that makes its node blink', function() {

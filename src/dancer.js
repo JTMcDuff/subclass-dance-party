@@ -50,12 +50,10 @@ Dancer.prototype.step = function() {
 };
 
 Dancer.prototype.setPosition = function(top,left) {
-  console.log("Setting position. top: "+top+" left: "+left);
   var styleSettings = {
     top: top,
     left: left
   };
-  console.log("This.node "+this.$node);
   this.$node.css(styleSettings);
 };
 
